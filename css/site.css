@@ -31,3 +31,7 @@ header p {
   padding: 0px;
   margin: 0px;
 }
+
+.cardStyle{
+  width: 350px;
+}

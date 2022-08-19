@@ -4,37 +4,51 @@ const myAnimalObject = {
     tiger: { name: 'tiger', picture: '/img/standard_tiger.jpg', description: 'en flot tiger' },
     spider: { name: 'edderkop', picture: '/img/Brachypelma_smithi.jpg', description: 'Mexican red knee tarantula spider Brahipelma Smitti on coconut substrate shortly after molting' },
     koala: { name: 'koala', picture: '/img/_WW236934.jpg', description: 'nice fellow' },
-    shark: { name: 'haj', picture: '/img/_WW236934.jpg', description: 'not a nice fellow' },
 };
 
 
-// Declare and create elements
+// Declare parent
 const myApp = document.getElementById('app');
-const cardFigure = document.createElement("figure")
-const cardHeadline = document.createElement("h2")
 
 
 
 
 //Loop
 for (let myIndex in myAnimalObject){
-    // console.log(myAnimalObject[myIndex].name);
-    // console.log(myAnimalObject[myIndex].picture);
-    // console.log(myAnimalObject[myIndex].description);
 
-    buildCard(myAnimalObject[myIndex].name, myAnimalObject[myIndex].picture, myAnimalObject[myIndex].description)
+    let name = myAnimalObject[myIndex].name
+    let url = myAnimalObject[myIndex].picture
+    let description = myAnimalObject[myIndex].description
+
+    buildCard(name, url, description)
 
 }
-
-testCard()
-
 
 
 //Card Function
+function buildCard(myHeadline, url, myDescription){
+    
+    //Build element tags for the card
+    const cardFigure = document.createElement("figure")
+    const cardHeadline = document.createElement("h2")
+    const cardImg = document.createElement("img")
+    const cardDescription = document.createElement("p")
 
-function buildCard(myHeadline, img, myDescription){
 
+    //Card values
+    cardHeadline.textContent = myHeadline;
+    cardImg.src = url;
+    cardDescription.textContent = myDescription;
+
+
+
+    //Appends
+    myApp.appendChild(cardFigure)
+    cardFigure.appendChild(cardHeadline)
+    cardFigure.appendChild(cardImg)
+    cardFigure.appendChild(cardDescription)
+
+    cardFigure.classList("cardStyle")
 }
 
 
-//Appends
