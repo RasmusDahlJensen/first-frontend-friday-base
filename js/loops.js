@@ -19,6 +19,7 @@ for (let myIndex in myAnimalObject){
     let name = myAnimalObject[myIndex].name
     let url = myAnimalObject[myIndex].picture
     let description = myAnimalObject[myIndex].description
+    
 
     buildCard(name, url, description)
 
@@ -47,8 +48,6 @@ function buildCard(myHeadline, url, myDescription){
     cardFigure.appendChild(cardHeadline)
     cardFigure.appendChild(cardImg)
     cardFigure.appendChild(cardDescription)
-
-    cardFigure.classList("cardStyle")
 }
 
 
