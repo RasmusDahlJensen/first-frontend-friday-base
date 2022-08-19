@@ -32,6 +32,23 @@ header p {
   margin: 0px;
 }
 
+#app{
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .cardStyle{
-  width: 350px;
+  width: 370px;
+  background-color: #e3e3e3b5;
+  border: 2px solid black;
+  border-radius: 1%;
+  
+}
+
+.cardStyle img{
+  width: 100%
+}
+
+.cardStyle h2, p{
+  padding: 2%;
 }
