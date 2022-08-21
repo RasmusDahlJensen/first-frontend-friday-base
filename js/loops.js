@@ -4,6 +4,7 @@ const myAnimalObject = {
     tiger: { name: 'tiger', picture: '/img/standard_tiger.jpg', description: 'en flot tiger' },
     spider: { name: 'edderkop', picture: '/img/Brachypelma_smithi.jpg', description: 'Mexican red knee tarantula spider Brahipelma Smitti on coconut substrate shortly after molting' },
     koala: { name: 'koala', picture: '/img/_WW236934.jpg', description: 'nice fellow' },
+    bunny: {name: 'tooby mcTooberson', picture: 'https://cdn.discordapp.com/attachments/435849309305438229/1010180956168134797/toobs.jpg', description: 'fat'}
 };
 
 
